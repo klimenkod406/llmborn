@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 238 64" width="238" height="64" fill="none" role="img" aria-label="LLMborn">
+  <title>LLMborn</title>
+  <g>
+    <rect width="64" height="64" rx="16" fill="#10141e"/>
+    <rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="none" stroke="#ffffff" stroke-opacity=".12"/>
+    <g stroke="#35d6a4" stroke-opacity=".22" stroke-width="1" stroke-linecap="round">
+      <path d="M32 20.5 45.42 28.25M45.42 28.25 45.42 43.75M45.42 43.75 32 51.5M32 51.5 18.58 43.75M18.58 43.75 18.58 28.25M18.58 28.25 32 20.5"/>
+    </g>
+    <g stroke="#35d6a4" stroke-opacity=".5" stroke-width="1.3" stroke-linecap="round">
+      <path d="M32 36 32 20.5M32 36 45.42 28.25M32 36 45.42 43.75M32 36 32 51.5M32 36 18.58 43.75M32 36 18.58 28.25"/>
+    </g>
+    <circle cx="32" cy="20.5" r="6.6" fill="#f5b13d" fill-opacity=".14"/>
+    <circle cx="32" cy="20.5" r="6.6" fill="none" stroke="#f5b13d" stroke-opacity=".38" stroke-width=".9"/>
+    <g fill="#f5b13d">
+      <circle cx="26.2" cy="11.2" r="1.05" fill-opacity=".5"/>
+      <circle cx="32" cy="7.6" r="1.45" fill-opacity=".85"/>
+      <circle cx="37.8" cy="11.6" r=".85" fill-opacity=".4"/>
+    </g>
+    <g fill="#35d6a4">
+      <circle cx="18.58" cy="28.25" r="2.9"/>
+      <circle cx="45.42" cy="28.25" r="2.9"/>
+      <circle cx="18.58" cy="43.75" r="2.9"/>
+      <circle cx="45.42" cy="43.75" r="2.9"/>
+      <circle cx="32" cy="51.5" r="2.9"/>
+    </g>
+    <circle cx="32" cy="20.5" r="3.1" fill="#f5b13d"/>
+    <circle cx="32" cy="36" r="4.3" fill="#35d6a4"/>
+    <circle cx="32" cy="36" r="7.6" fill="#35d6a4" fill-opacity=".13"/>
+  </g>
+  <text x="82" y="42.5" font-family="Manrope, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="-1.1">
+    <tspan fill="#35d6a4">LLM</tspan><tspan fill="#e9eefa">born</tspan>
+  </text>
+</svg>
