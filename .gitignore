@@ -1,0 +1,16 @@
+# зависимостей нет, но на всякий случай
+node_modules/
+package-lock.json
+
+# архивы сборки
+*.zip
+
+# системный мусор
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# редакторы
+.vscode/
+.idea/
+*.swp
