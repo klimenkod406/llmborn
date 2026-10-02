@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLMborn — браузерная игра о том, как обучаются ИИ-модели</title>
+<meta name="description" content="LLMborn: интерактивная браузерная игра — токены, эмбеддинги, веса, loss, градиентный спуск и настоящее обучение нейросети прямо в браузере.">
+<meta property="og:title" content="LLMborn — собери модель с нуля">
+<meta property="og:description" content="Браузерная игра о том, как ИИ-модели учатся: от токенов до настоящего обучения нейросети.">
+<meta property="og:image" content="logo-wordmark.svg">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="apple-touch-icon" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="bg-orbs" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="brand">
+    <img class="brand-mark" src="logo.svg" width="40" height="40" alt="LLMborn">
+    <span class="brand-text">
+      <strong><b>LLM</b>born</strong>
+      <em>собери модель с нуля</em>
+    </span>
+  </div>
+
+  <div class="top-mid">
+    <div class="level-line">
+      <span id="lvl-idx" class="mono">Уровень 1 / 9</span>
+      <span id="lvl-name" class="top-name">Токены</span>
+    </div>
+    <div class="track" role="progressbar" aria-label="Прогресс обучения">
+      <div id="track-fill" class="track-fill"></div>
+      <div id="track-dots" class="track-dots"></div>
+    </div>
+  </div>
+
+  <div class="top-right">
+    <div class="stars" title="Звёзды за пройденные уровни"><span id="star-count" class="mono">0</span><span class="star-ico" aria-hidden="true">★</span></div>
+    <button id="btn-sound" class="icon-btn" title="Звук" aria-label="Переключить звук">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="on" d="M15.5 8.5a5 5 0 0 1 0 7"/><path class="off" d="m16 9 5 6M21 9l-5 6"/></svg>
+    </button>
+    <button id="btn-reset" class="icon-btn" title="Сбросить прогресс" aria-label="Сбросить прогресс">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="stage" class="stage"></main>
+
+<nav class="dock">
+  <button id="btn-prev" class="dock-btn ghost">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 5-7 7 7 7"/></svg>
+    Назад
+  </button>
+  <div id="hints" class="hints"></div>
+  <button id="btn-next" class="dock-btn">
+    <span id="next-label">Дальше</span>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 5 7 7-7 7"/></svg>
+  </button>
+</nav>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<noscript>
+  <div class="noscript">Для игры нужен включённый JavaScript. Вся игра работает локально в браузере, никуда ничего не отправляется.</div>
+</noscript>
+
+<script src="engine.js"></script>
+<script src="levels.core.js"></script>
+<script src="levels.adv.js"></script>
+<script>window.NF.boot();</script>
+</body>
+</html>
